@@ -1,0 +1,229 @@
+.typewriter h1 {
+    text-align: center;
+    overflow: hidden; /* Garantit que le contenu n'est pas révélé avant l'animation */
+    border-right: .15em solid orange; /* Le curseur de la machine à écrire */
+    white-space:nowrap; /* Conserve le contenu sur une seule ligne */
+    overflow-wrap: anywhere;
+    margin: 10% auto; /* Donne cet effet de défilement au fur et à mesure de la saisie */
+    letter-spacing: .15em; /* Ajuster au besoin */
+    animation:  
+        typing 3.5s steps(40, end), 
+        blink-caret 0.75s step-end; 
+  }
+
+  /* The typing effect */
+   @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+  } 
+  
+  /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        100% { border-color: orange }
+}
+header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    background-color: rgb(28, 29, 28);
+    
+    
+}
+
+ul {
+    display: flex;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+li {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+footer {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    background-color: rgb(28, 29, 28);
+    margin-top: 30px;
+    
+}
+body {
+    margin: 0;
+}
+html {
+  background-color: rgb(65, 63, 63);
+  scroll-behavior: smooth;
+}
+
+.contain {
+    
+    height: 46px;
+}
+p {
+    text-align: center;
+    
+    margin : 20px;
+    padding : 20px;
+    font-size:xx-large;
+    /* Propriétés pour tester l'overflow
+    width : 200px;
+    height : 100px;
+    overflow : scroll;
+    */
+}
+a {
+    text-decoration: none;
+    background-position: center;
+    font-size: 20px;
+    color: black;
+
+}
+.Droite {
+    text-align: right;
+}
+.eleMenu {
+    width : 500px;
+    background-color:rgb(94, 255, 0);
+    /*margin : auto;*/
+}
+.eleMenu:nth-child(2) {
+    background-color:red;
+}
+
+.menu {
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap : wrap;
+    justify-content: space-between;
+    align-items : center;
+    height : 500px; 
+    align-content: center;
+}
+.right{
+    display:block;
+    text-align: right;
+}
+.eleImage {
+    
+    
+    width : 20%;
+    height :200px;
+    margin : auto;
+    margin :10px;
+    border-radius : 20px;
+    box-shadow: 10px 10px 5px 5px  black;
+}
+.eleImage2 {
+    
+    width : 600px;
+    height : 600px;
+    margin : auto;
+    display: block;
+    text-align: center;
+    
+}
+
+.contour {
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 5px  rgb(229, 245, 5);
+}
+
+.eleImage:hover {
+    background-color: rgb(51, 255, 0);
+}
+.eleLOGO {
+    margin-top: 10px;
+    
+    height : 100%;
+    object-fit : cover; 
+    border-radius : 20px;
+    text-align: center;
+}
+#texte {
+    border:2px dotted;
+    display: block;
+    text-align: center;
+    font-size: xx-large;
+}
+.vignettes {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;  
+    background-color: rgb(50, 54, 49);
+    box-shadow: 10px 10px 5px 5px  rgb(19, 19, 18);
+}
+
+img {
+    
+    width : 100%;
+    height : 77%;
+    object-fit : cover; 
+    border-radius : 18px;
+}
+.img2 {
+    
+    visibility: hidden;
+    width : 100%;
+    height : 80%;
+    /*object-fit : cover; */
+    border-radius : 20px;
+}
+
+.hidden {
+display: none;
+}
+
+.show {
+    visibility: visible;
+}
+.legende {
+    text-align: center;
+}
+
+.sport {
+    display: block;
+    text-align: center;
+    
+}
+
+.legende2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius : 20px;
+    
+}
+#scroll_to_top {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 50px;
+    right: 30px;
+}
+#scroll_to_top img {
+    width: 70px;
+}
+@media screen and (max-width: 1200px)
+{
+    .eleImage {
+        width : 45%;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .eleImage {
+        width : 90%;
+    }
+}
